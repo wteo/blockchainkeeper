@@ -5,6 +5,7 @@
     <head>
         <title>Blockchain Keeper - Contact</title>
         <link href=".\style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -23,7 +24,7 @@
             <image src=".\images\contact\question.jpg" width="50%" height="50%"/>
             <h3>CONTACT</h3>
             <p>If you have any queries or concerns relating to my blog, you may contact me here.</p>
-            <form action=".\contact\form.html" method="POST">
+            <form id="contact" action="/form" method="get">
                 <label for="name">Name*</label>
                 <input id="name" type="text" name="name" required>
                 <br>
@@ -31,7 +32,7 @@
                 <input id="email" type="text" name="email" required>
                 <br>
                 <label for="subject">Subject</label>
-                <input id="subject" type="text" name="subject" value="Hello!">
+                <input id="subject" type="text" name="subject" placeholder="Enquiry">
                 <br>
                 <label for="message">Message*</label>
                 <input id="message" type="text" name="message" maxlength="300" required>
@@ -49,3 +50,4 @@
     </body>
 
 </html>
+
